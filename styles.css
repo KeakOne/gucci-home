@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-image: url(img/snoman.gif); }
+
+.box {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: rotateY(0deg) translate(-2%, 20%);
+  animation: spin 10s infinite;
+  transform-style: preserve-3d; }
+  .box .face {
+    position: absolute;
+    transform-style: preserve-3d;
+    /*&.face-left, &.face-right{
+    	width:15px;
+    	height:210px;
+    	background:gold;
+    }*/ }
+    .box .face.face-front, .box .face.face-back {
+      width: 150px;
+      height: 210px; }
+    .box .face.face-front {
+      transform: translate3d(-50%, 0, 50px);
+      background: url(img/gucci-front.png); }
+    .box .face .face-back {
+      transform: translate3d(-50%, 0, -50px) rotateY(180deg);
+      background: url(img/gucci-back.png); }
+    .box .face.face-left {
+      transform: translate3d(-250px, 0, 0) rotateY(90deg);
+      background: url(img/gucci-front.png); }
+    .box .face.face-right {
+      transform: translate3d(150px, 0, 0) rotateY(-90deg);
+      background: url(img/gucci-back.png); }
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg) translate(-50%, -50%); }
+  50% {
+    transform: rotateY(180deg) translate(-50%, -50%); }
+  100% {
+    transform: rotateY(360deg) translate(-50%, -50%); } }
+
+/*# sourceMappingURL=styles.css.map */
