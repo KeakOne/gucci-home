@@ -5,10 +5,10 @@ function burr() {
   var width = canvas.width = window.innerWidth;
   var height = canvas.height = window.innerHeight;
 
-  $(window).on('resize', function() {
+  function make() {
     width = canvas.width = window.innerWidth;
     height = canvas.height = window.innerHeight;
-  });
+  };
 
   colors = ['#61E89E', '#FF8A80', '#F9ED86', '#FFB28E', '#95FFEF', '#D75A6C', '#79C4FC', '#DBDAD9', '#FF405F' ];
   symbols = [
